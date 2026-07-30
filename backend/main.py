@@ -73,7 +73,12 @@ def evaluate_answer(
     request: AnswerRequest,
     database: Session = Depends(get_database),
 ):
-    evaluation = evaluate_candidate_answer(request.answer)
+    
+    evaluation = evaluate_candidate_answer(
+    role=request.role,
+    question=request.question,
+    answer=request.answer,
+)
 
     interview_attempt = InterviewAttempt(
         role=request.role,
