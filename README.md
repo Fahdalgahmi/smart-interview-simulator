@@ -1,19 +1,30 @@
 # InterviewIQ – AI Practice Studio
 
-InterviewIQ is a full-stack interview practice platform that helps users prepare for technical interviews by generating role-specific questions, evaluating answers with AI, tracking interview history, and analyzing performance.
+🚀 **Live Demo:** https://interviewiq-api-ro8g.onrender.com
+
+💻 **GitHub Repository:** https://github.com/Fahdalgahmi/smart-interview-simulator
+
+InterviewIQ is a full-stack AI-powered interview practice platform that helps users prepare for technical interviews through role-specific questions, automated answer evaluation, detailed feedback, and performance analytics.
 
 ---
 
 ## Features
 
-- Role-specific interview questions
+- AI-generated interview questions
+- Multiple career paths
+  - Data Analyst
+  - Business Analyst
+  - Software Engineer
+- Easy, Medium, and Hard difficulty levels
 - AI-powered answer evaluation
-- Score (1–10)
-- Strengths and improvement suggestions
-- Sample answer generation
+- Performance score (1–10)
+- Personalized strengths and improvement suggestions
+- Suggested answer structure
 - Interview history
-- Delete interview history
-- Performance analytics dashboard
+- View previous interview details
+- Delete interview attempts
+- Analytics dashboard
+- PostgreSQL database integration
 - Responsive user interface
 
 ---
@@ -21,19 +32,24 @@ InterviewIQ is a full-stack interview practice platform that helps users prepare
 ## Tech Stack
 
 ### Backend
-- FastAPI
 - Python
-- PostgreSQL
+- FastAPI
 - SQLAlchemy
+- PostgreSQL (Neon)
+- REST API
 
 ### Frontend
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
 
 ### AI
 - Ollama
 - Llama 3.2
+
+### Deployment
+- Render
+- GitHub
 
 ---
 
@@ -44,10 +60,10 @@ smart_interview_simulator/
 │
 ├── backend/
 ├── frontend/
-├── database/
-├── screenshots/
 ├── requirements.txt
-└── README.md
+├── README.md
+├── render.yaml
+└── .gitignore
 ```
 
 ---
@@ -55,13 +71,18 @@ smart_interview_simulator/
 ## Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Fahdalgahmi/smart-interview-simulator.git
 
 cd smart_interview_simulator
 
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
 pip install -r requirements.txt
 
-uvicorn app.main:app --reload
+uvicorn backend.main:app --reload
 ```
 
 ---
@@ -70,32 +91,46 @@ uvicorn app.main:app --reload
 
 | Method | Endpoint | Description |
 |---------|----------|-------------|
-| GET | /roles | Get interview roles |
-| POST | /question | Generate interview question |
-| POST | /feedback | Evaluate answer |
-| GET | /history | Interview history |
-| DELETE | /history/{id} | Delete attempt |
-| GET | /analytics | Performance dashboard |
+| GET | / | Home Page |
+| GET | /health | Health Check |
+| GET | /roles | Available Interview Roles |
+| POST | /question | Generate Interview Question |
+| POST | /feedback | Evaluate Candidate Answer |
+| GET | /history | Interview History |
+| GET | /analytics | Analytics Dashboard |
+| DELETE | /history/{id} | Delete Interview |
 
 ---
 
-## Screenshots
 
-(Add screenshots here)
 
----
 
-## Future Improvements
+
+## Future Enhancements
 
 - User authentication
-- Difficulty levels
+- Personalized accounts
 - AI follow-up questions
-- Leaderboard
-- Cloud deployment
-- Resume feedback
+- Resume analysis
+- Export interview reports
+- Leaderboards
+- Email progress reports
 
 ---
 
 ## Author
 
-Fahd Algahmi
+**Fahd Algahmi**
+
+Bachelor of Science in Computer Science  
+Eastern Michigan University
+
+GitHub: https://github.com/Fahdalgahmi
+
+LinkedIn: https://www.linkedin.com/in/fahd-algahmi/
+
+---
+
+## License
+
+This project is intended for educational and portfolio purposes.
