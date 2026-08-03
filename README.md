@@ -122,6 +122,17 @@ uvicorn backend.main:app --reload
 
 <img width="949" height="448" alt="1" src="https://github.com/user-attachments/assets/661dfc60-45d2-45c2-b1a3-765547b63380" />
 
+<img width="942" height="445" alt="2" src="https://github.com/user-attachments/assets/5e6942ad-82c8-4328-815a-a9ea0281066b" />
+
+<img width="960" height="447" alt="3" src="https://github.com/user-attachments/assets/2ab1e713-7c2e-410b-aa54-983bf34d16a5" />
+
+<img width="942" height="442" alt="4" src="https://github.com/user-attachments/assets/56a64e6c-d204-4c84-95e7-87f628290be3" />
+
+<img width="941" height="443" alt="5" src="https://github.com/user-attachments/assets/e3b2c7e3-6815-468e-9c87-1e01a793637c" />
+
+
+
+
 
 ## Author
 
